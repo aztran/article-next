@@ -2,7 +2,7 @@ import React from 'react';
 
 import Youtube from 'react-youtube';
 
-import Parent1 from 'public/images/parent.svg';
+import Parent1 from 'public/images/Parent.svg';
 import Parent3 from 'public/images/parent-3.svg';
 import Parent2 from 'public/images/parent-2.svg';
 import Parent4 from 'public/images/parent-4.svg';
