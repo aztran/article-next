@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.header {
+    height: 80px;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.button {
+    @apply border flex justify-center items-center rounded-full py-2 px-5 text-xs;
+}
+
+.button.primary {
+    @apply bg-white text-orange-1 border-orange-1 border;
+}
+
+.button.inverted {
+    @apply bg-white text-orange-1 border-orange-1 border;
+}
+
+.button.emergency {
+    @apply bg-orange-1 text-white;
+}
+
+/* .header button {
+    @apply bg-white text-orange-1 border-orange-1 border flex justify-center rounded-full p-2;
+} */
+
+.first-aid-icon {
+
+}
+
+@screen sm {
+
+    .button, .button.emergency {
+        @apply text-xl px-9;
+    }
+
+    .button.primary, .button.emergency {
+        @apply bg-orange-1 text-white;
+    }
+
+    .first-aid-icon {
+        width: 231px;
+        height: 264px;
+    }
+
+    footer .footer-top {
+        height: 190px;
+    }
+
+    .list-ages .note {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+}
+
+
+.family-card {
+    border: 1px solid #DADADA;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* width: 145px; */
+    height: 222px;
+}
